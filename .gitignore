@@ -80,7 +80,6 @@ iOSInjectionProject/
 .mapbox
 *framework.zip
 Products/
-/Carthage/.resolved.md5
 /docs
 /.swiftpm/
 /output/
