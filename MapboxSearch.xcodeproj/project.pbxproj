@@ -146,11 +146,9 @@
 		2CD6C03C29F1982100D865D1 /* EventsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6C03B29F1982100D865D1 /* EventsManagerTests.swift */; };
 		2CE1B9F82A13C4E6005B043F /* AddressAutofillIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1B9F72A13C4E6005B043F /* AddressAutofillIntegrationTests.swift */; };
 		3A0D7E56233522D5006D81BB /* MapboxSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0D7E4C233522D4006D81BB /* MapboxSearch.framework */; };
+		60C0A5DD2BEBF19500CFBEBF /* MapboxCoreSearch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C0A5DC2BEBF19500CFBEBF /* MapboxCoreSearch.xcframework */; };
+		60C0A5DF2BEBF1A100CFBEBF /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C0A5DE2BEBF1A100CFBEBF /* MapboxCommon.xcframework */; };
 		DFBC8A6D2AD42F5F00D394EF /* Any+dumpAsString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */; };
-		E648C0B626428D2B0044315F /* MapboxCoreSearch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */; };
-		E648C0BA26428D3D0044315F /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B926428D3D0044315F /* MapboxCommon.xcframework */; };
-		E648C0BD26428D530044315F /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B926428D3D0044315F /* MapboxCommon.xcframework */; };
-		E648C0BE26428D530044315F /* MapboxCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0B926428D3D0044315F /* MapboxCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E648C0C9264297A10044315F /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E648C0C8264297730044315F /* libc++.1.tbd */; };
 		F907443B261B13F40091899C /* MockServerUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907443A261B13F40091899C /* MockServerUITestCase.swift */; };
 		F914EE5A2743E03B00D4F173 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDD2C32508DFE400DC0A98 /* Array+Extensions.swift */; };
@@ -486,7 +484,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FEBC00DB243C6D32000B268B /* MapboxSearch.framework in Embed Frameworks */,
-				E648C0BE26428D530044315F /* MapboxCommon.xcframework in Embed Frameworks */,
 				FEBC00DF243C6D32000B268B /* MapboxSearchUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -591,9 +588,9 @@
 		2CE1B9F72A13C4E6005B043F /* AddressAutofillIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressAutofillIntegrationTests.swift; sourceTree = "<group>"; };
 		3A0D7E4C233522D4006D81BB /* MapboxSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0D7E55233522D5006D81BB /* MapboxSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C0A5DC2BEBF19500CFBEBF /* MapboxCoreSearch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MapboxCoreSearch.xcframework; sourceTree = "<group>"; };
+		60C0A5DE2BEBF1A100CFBEBF /* MapboxCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MapboxCommon.xcframework; sourceTree = "<group>"; };
 		DFBC8A6C2AD42F5F00D394EF /* Any+dumpAsString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Any+dumpAsString.swift"; sourceTree = "<group>"; };
-		E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCoreSearch.xcframework; path = Carthage/Build/MapboxCoreSearch.xcframework; sourceTree = "<group>"; };
-		E648C0B926428D3D0044315F /* MapboxCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCommon.xcframework; path = Carthage/Build/MapboxCommon.xcframework; sourceTree = "<group>"; };
 		E648C0C8264297730044315F /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		F907443A261B13F40091899C /* MockServerUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServerUITestCase.swift; sourceTree = "<group>"; };
 		F914EE632743E4F400D4F173 /* CoreAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAliases.swift; sourceTree = "<group>"; };
@@ -863,9 +860,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E648C0B626428D2B0044315F /* MapboxCoreSearch.xcframework in Frameworks */,
-				E648C0BA26428D3D0044315F /* MapboxCommon.xcframework in Frameworks */,
+				60C0A5DD2BEBF19500CFBEBF /* MapboxCoreSearch.xcframework in Frameworks */,
 				E648C0C9264297A10044315F /* libc++.1.tbd in Frameworks */,
+				60C0A5DF2BEBF1A100CFBEBF /* MapboxCommon.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,7 +900,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E648C0BD26428D530044315F /* MapboxCommon.xcframework in Frameworks */,
 				FEBC00DA243C6D32000B268B /* MapboxSearch.framework in Frameworks */,
 				FEBC00DE243C6D32000B268B /* MapboxSearchUI.framework in Frameworks */,
 			);
@@ -1417,8 +1413,8 @@
 			isa = PBXGroup;
 			children = (
 				E648C0C8264297730044315F /* libc++.1.tbd */,
-				E648C0B926428D3D0044315F /* MapboxCommon.xcframework */,
-				E648C0B526428D2B0044315F /* MapboxCoreSearch.xcframework */,
+				60C0A5DE2BEBF1A100CFBEBF /* MapboxCommon.xcframework */,
+				60C0A5DC2BEBF19500CFBEBF /* MapboxCoreSearch.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
