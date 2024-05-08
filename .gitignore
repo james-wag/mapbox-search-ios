@@ -78,7 +78,6 @@ iOSInjectionProject/
 
 .DS_Store
 .mapbox
-*framework.zip
 Products/
 /docs
 /.swiftpm/
